@@ -1,4 +1,4 @@
-name:  Microcraft Android CI.
+name: Microcraft Android CI.
 
 on:
   pull_request:
