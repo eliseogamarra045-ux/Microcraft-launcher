@@ -46,11 +46,7 @@ public class ModpackCreateFragment extends Fragment {
         });;
     }
 
-    private void tryInstall(Class<? extends Fragment> fragmentClass, String tag){
-        if(!hasOnlineProfile()){
-            hasNoOnlineProfileDialog(requireActivity());
-        } else {
-            Tools.swapFragment(requireActivity(), fragmentClass, tag, null);
-        }
-    }
+    
+private void tryInstall(Class<? extends Fragment> fragmentClass, String tag){
+    Tools.swapFragment(requireActivity(), fragmentClass, tag, null);
 }
