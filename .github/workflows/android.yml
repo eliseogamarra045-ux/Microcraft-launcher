@@ -31,6 +31,7 @@ jobs:
       - name: Get JRE 8
         uses: dawidd6/action-download-artifact@v9
         with:
+          github_token: ${{ secrets.OPENJDK_TOKEN }}
           workflow: build.yml
           path: app_pojavlauncher/src/main/assets/components/jre
           workflow_conclusion: completed
