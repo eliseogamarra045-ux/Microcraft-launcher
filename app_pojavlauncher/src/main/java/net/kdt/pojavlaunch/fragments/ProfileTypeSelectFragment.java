@@ -42,7 +42,8 @@ public class ProfileTypeSelectFragment extends Fragment {
         view.findViewById(R.id.modded_profile_neoforge).setOnClickListener((v)->
                 tryInstall(NeoForgeInstallFragment.class, NeoForgeInstallFragment.TAG));
         view.findViewById(R.id.modded_profile_modpack).setOnClickListener((v)->
-                tryInstall(ModpackCreateFragment.class, ModpackCreateFragment.TAG));
+        Tools.swapFragment(requireActivity(), ModpackCreateFragment.class,
+                ModpackCreateFragment.TAG, null));
         view.findViewById(R.id.modded_profile_lwjgl3ify).setOnClickListener((v)->
                 tryInstall(LWJGL3ifyInstallFragment.class, LWJGL3ifyInstallFragment.TAG));
         view.findViewById(R.id.modded_profile_quilt).setOnClickListener((v)->
